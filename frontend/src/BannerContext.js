@@ -14,7 +14,7 @@ export const BannerProvider = ({ children }) => {
   useEffect(() => {
     const fetchBanner = async () => {
       const response = await axios.get(
-        `${process.env.BACKEND_URL}`
+        `${process.env.BACKEND_URL}/api/banner`
       );
       setBanner(response.data);
     };
