@@ -20,7 +20,7 @@ Frontend is hosted on Netlify, Backend on Render, which offers good logging, and
 
 ## Acknowledgment
 
-I would like to thank takeuforward team for providing this opportunity, to mainly practice My SQL skills :)
+I would like to thank takeUForward team for providing this opportunity, to mainly practice My SQL skills :)
 
 ## Contributing
 
