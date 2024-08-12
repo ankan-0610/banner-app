@@ -1,5 +1,3 @@
-require('dotenv').config();  // Load .env file content into process.env
-
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
@@ -8,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const dbURL = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQL_ROOT_PASSWORD}@${process.env.RAILWAY_PRIVATE_DOMAIN}:3306/${process.env.MYSQL_DATABASE}`;
+const dbURL = `${MySQL.MYSQL_URL}`;
 
 const db = mysql.createConnection(dbURL);
 
