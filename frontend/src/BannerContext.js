@@ -13,7 +13,9 @@ export const BannerProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchBanner = async () => {
-      const response = await axios.get("http://localhost:5000/api/banner");
+      const response = await axios.get(
+        "http://astonishing-beauty-production.up.railway.app/api/banner"
+      );
       setBanner(response.data);
     };
 
