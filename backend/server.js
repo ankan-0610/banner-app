@@ -26,7 +26,7 @@ app.get("/api/banner", (req, res) => {
       throw err;
     }
     res.json(result[0]);
-    console.log('query accepted')
+    console.log('query accepted, get')
   });
 });
 
@@ -42,7 +42,7 @@ app.post("/api/banner", (req, res) => {
         throw err;
       }
       res.json({ status: "success" });
-      console.log("query accepted");
+      console.log("query accepted, post");
     }
   );
 });

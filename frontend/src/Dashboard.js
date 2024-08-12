@@ -29,7 +29,7 @@ const Dashboard = () => {
       return;
     }
     
-    await axios.post(`${process.env.BACKEND_URL}/api/banner`, formData);
+    await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/banner`, formData);
 
     // Re-fetch the banner data to ensure the state is updated with the latest data from the server
     const response = await axios.get(`${process.env.BACKEND_URL}/api/banner`);
