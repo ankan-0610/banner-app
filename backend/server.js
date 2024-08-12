@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const dbURL = `${MYSQL_URL}`;
+const dbURL = `${process.env.MYSQL_URL}`;
 
 const db = mysql.createConnection(dbURL);
 
