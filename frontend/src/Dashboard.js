@@ -29,15 +29,10 @@ const Dashboard = () => {
       return;
     }
     
-    await axios.post(
-      "http://astonishing-beauty-production.up.railway.app/api/banner",
-      formData
-    );
+    await axios.post(`${process.env.BACKEND_URL}`, formData);
 
     // Re-fetch the banner data to ensure the state is updated with the latest data from the server
-    const response = await axios.get(
-      "http://astonishing-beauty-production.up.railway.app/api/banner"
-    );
+    const response = await axios.get(`${process.env.BACKEND_URL}`);
     console.log(response.data);
     setBanner(response.data); // Update the global banner state
   };
