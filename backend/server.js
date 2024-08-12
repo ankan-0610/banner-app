@@ -18,21 +18,6 @@ db.connect((err) => {
   console.log("Connected to database.");
 });
 
-app.get("api/create", (req, res) => {
-  const sqlFilePath = path.join(__dirname, "schema.sql");
-  const sqlQuery = fs.readFileSync(sqlFilePath, "utf8");
-
-  // Execute the query
-  db.query(sqlQuery, (err, result) => {
-    if (err) {
-      console.error("Error executing query:", err);
-      res.status(500).send("Error executing query");
-      return;
-    }
-    res.send("Table created successfully");
-  });
-});
-
 // Get banner details
 app.get("/api/banner", (req, res) => {
   db.query("SELECT * FROM banner_db LIMIT 1", (err, result) => {
