@@ -13,7 +13,7 @@ export const BannerProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchBanner = async () => {
-      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/banner`);
+      const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/create`);
       setBanner(response.data);
     };
 
