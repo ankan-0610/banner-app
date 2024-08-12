@@ -3,12 +3,16 @@ The banner's content and visibility can be controlled through an internal dashbo
 
 ## Features
 Banner Display: A banner that can display a message, a clickable link, and a countdown timer.
+
 Internal Dashboard: A control panel to update the banner's description, timer, link, and visibility.
+
 Database Integration: All banner settings are stored in a MySQL database and can be dynamically updated.
 
 ## Project Structure
 Backend (Node.js & Express): Provides RESTful APIs to interact with the MySQL database.
+
 Frontend (React): Displays the banner and dashboard interface.
+
 MySQL Database: Stores the banner details.
 
 ## Hosting
