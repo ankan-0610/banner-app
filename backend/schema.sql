@@ -6,4 +6,4 @@ CREATE TABLE banner_db (
   visible BOOLEAN
 );
 
-INSERT INTO banner (description, timer, link, visible) VALUES ('Welcome to our website!', 60, 'https://example.com', true);
+INSERT INTO banner_db (description, timer, link, visible) VALUES ('Welcome to our website!', 60, 'https://example.com', true);
