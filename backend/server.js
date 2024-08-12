@@ -21,8 +21,12 @@ db.connect((err) => {
 // Get banner details
 app.get("/api/banner", (req, res) => {
   db.query("SELECT * FROM banner_db LIMIT 1", (err, result) => {
-    if (err) throw err;
+    if (err) {
+      console.log('query error...')
+      throw err;
+    }
     res.json(result[0]);
+    console.log('query accepted')
   });
 });
 
@@ -33,8 +37,12 @@ app.post("/api/banner", (req, res) => {
     "UPDATE banner_db SET description=?, timer=?, link=?, visible=? WHERE id=1",
     [description, timer, link, visible],
     (err, result) => {
-      if (err) throw err;
+      if (err) {
+        console.log('cant post stuff here ...')
+        throw err;
+      }
       res.json({ status: "success" });
+      console.log("query accepted");
     }
   );
 });
