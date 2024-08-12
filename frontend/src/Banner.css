@@ -1,0 +1,33 @@
+/* Banner.css */
+
+.banner {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Light red border */
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.banner a {
+  color: #004085; /* Dark blue link color */
+  text-decoration: none;
+}
+
+.banner a:hover {
+  text-decoration: underline;
+}
+
+.banner p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.banner .timer {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}

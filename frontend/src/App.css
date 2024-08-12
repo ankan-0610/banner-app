@@ -1,0 +1,15 @@
+.banner {
+  background-color: #f8d7da;
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+form div {
+  margin-bottom: 10px;
+}
