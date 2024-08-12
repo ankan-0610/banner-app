@@ -18,7 +18,9 @@ MySQL Database: Stores the banner details.
 ## Hosting
 Frontend is hosted on Netlify, Backend on Render, which offers good logging, and a MySQL DB on CleverCloud
 
-Will update the setup instructions soon, was in a hurry.
+# Acknowledgment
+
+I would like to thank takeuforward team for providing this opportunity, to mainly practice My SQL skills :)
 
 ## Contributing
 
