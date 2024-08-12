@@ -1,7 +1,4 @@
-CREATE DATABASE railway;
-USE railway;
-
-CREATE TABLE banner (
+CREATE TABLE banner_db (
   id INT AUTO_INCREMENT PRIMARY KEY,
   description VARCHAR(255),
   timer INT,

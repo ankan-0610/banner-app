@@ -31,17 +31,17 @@ app.get("api/create", (req, res) => {
     }
     res.send("Table created successfully");
   });
-})
+});
 
 // Get banner details
 app.get("/api/banner", (req, res) => {
   db.query("SELECT * FROM banner_db LIMIT 1", (err, result) => {
     if (err) {
-      console.log('query error...')
+      console.log("query error...");
       throw err;
     }
     res.json(result[0]);
-    console.log('query accepted, get')
+    console.log("query accepted, get");
   });
 });
 
@@ -53,7 +53,7 @@ app.post("/api/banner", (req, res) => {
     [description, timer, link, visible],
     (err, result) => {
       if (err) {
-        console.log('cant post stuff here ...')
+        console.log("cant post stuff here ...");
         throw err;
       }
       res.json({ status: "success" });
