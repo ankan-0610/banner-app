@@ -11,7 +11,7 @@ const App = () => {
         <Banner />
         <Dashboard />
       </BannerProvider>
-      <h2>Site may take few seconds to respond, please be patient ...</h2>
+      <h2>Site may take few minutes to respond, please be patient ...</h2>
     </div>
   );
 };
