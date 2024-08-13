@@ -7,8 +7,8 @@ app.use(cors());
 app.use(express.json());
 
 const pool = mysql.createPool({
-  uri: process.env.MYSQL_URL, // or use individual options like host, user, password, database
-  connectionLimit: 10, // Adjust according to your needs
+  uri: process.env.MYSQL_URL, 
+  connectionLimit: 10,
 });
 
 // Get banner details
